@@ -1,0 +1,126 @@
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
+
+<style>
+html {
+	font-size: 62.5%;
+}
+
+#notebook_panel { /* main background */
+	background: #f0f0f0;
+}
+
+div.cell {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.cell.selected {
+	border-color: #f5f5f5;
+}
+
+div #notebook { /* centre the content */
+	background: #fff; /* white background for content */
+	/* set cell width to about 80 chars */
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#notebook .container {
+	width: 100%;
+}
+
+
+/* draw border around running cells */
+div.cell.border-box-sizing.code_cell.running { 
+	border: 3px solid #333;
+}
+
+/* Put a solid color box around each cell and its output, visually linking them together */
+div.cell.code_cell {
+/*    background-color: #f4f3e0; */
+/*    border-radius: 10px; */
+/*    padding: 1em;*/
+/*    margin-top: 1em;*/
+}
+
+
+/* Formatting for header cells */
+div.text_cell_render h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 3.6rem;
+	line-height: 100%;
+/*	margin-bottom: 0.1rem;*/
+/*	margin-top: 0.1rem;*/
+	color: #3f3f3f;
+	display: block;
+}	
+
+div.text_cell_render h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 3.2rem;
+	line-height: 100%;
+	color: #3f3f3f;
+/*	margin-bottom: 0.1rem;*/
+/*	margin-top: 0.1rem;*/
+	display: block;
+}	
+
+div.text_cell_render h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 2.8rem;
+/*	margin-top:12px;*/
+/*	margin-bottom: 3px;*/
+	color: #3f3f3f;
+}
+
+div.text_cell_render h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 2.2rem;
+	line-height: 100%;
+	color: #3f3f3f;
+/*	margin-bottom: 0.1rem;*/
+/*	margin-top: 0.1rem;*/
+	display: block;
+}
+
+div.text_cell_render h5 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1.9rem;
+	line-height: 100%;
+	color: #3f3f3f;
+/*	margin-bottom: 0.1rem;*/
+/*	margin-top: 0.1rem;*/
+	display: block;
+}
+
+div.text_cell_render h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1.7rem;
+	line-height: 100%;
+	color: #3f3f3f;
+/*	margin-bottom: 0.1rem;*/
+/*	margin-top: 0.1rem;*/
+	display: block;
+}
+
+div.text_cell_render {  
+	color: #404040;
+	font-family: 'Roboto Slab', Baskerville, Georgia, serif;
+	font-size: 1.6rem;
+	line-height: 2.6rem; /* added for some line spacing of text. */
+}
+
+.CodeMirror pre {
+    font-family: 'Source Code Pro', Consolas, monocco, monospace;
+}
+
+</style>
