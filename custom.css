@@ -1,9 +1,8 @@
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic');
+@import url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
+@import url('http://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
-<style>
 html {
 	font-size: 62.5%;
 }
@@ -123,4 +122,10 @@ div.text_cell_render {
     font-family: 'Source Code Pro', Consolas, monocco, monospace;
 }
 
-</style>
+.text_cell_render table > td {
+	text-align: left;
+	vertical-align: top;
+	padding: 1rem 0 4rem 0;
+	margin-bottom: 1em;
+	border-top: 1px solid #efefef;
+}
