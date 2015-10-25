@@ -16,5 +16,6 @@
 #ipython notebook --profile=$MY_PROFILE
 
 # Start Jupyter Notebook server
+echo "Starting Jupyter Notebook server ..."
 jupyter notebook
 
