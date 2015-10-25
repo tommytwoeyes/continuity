@@ -63,7 +63,7 @@ div.text_cell_render h2 {
 	font-weight: 100;
 	font-size: 3.2rem;
 	line-height: 100%;
-	color: #3f3f3f;
+	color: #cc0000;
 /*	margin-bottom: 0.1rem;*/
 /*	margin-top: 0.1rem;*/
 	display: block;
@@ -72,7 +72,7 @@ div.text_cell_render h2 {
 div.text_cell_render h3 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
-	font-size: 2.8rem;
+	font-size: 4.8rem;
 /*	margin-top:12px;*/
 /*	margin-bottom: 3px;*/
 	color: #3f3f3f;
@@ -128,4 +128,86 @@ div.text_cell_render {
 	padding: 1rem 0 4rem 0;
 	margin-bottom: 1em;
 	border-top: 1px solid #efefef;
+}
+
+
+.math,
+.MathJax_Display {
+	color: #05b9ff;
+}
+
+.text_cell_render .theorem {
+	padding: 3rem;
+	margin: auto;
+	border: 1px solid #05b9ff;
+}
+
+.text_cell_render ol.alpha > li  {
+	list-style-type: upper-alpha;
+}
+
+.text_cell_render ol.roman > li {
+	list-style-type: upper-roman;
+}
+
+.text_cell_render table {
+	margin-top: 4rem;
+}
+
+.text_cell_render table,
+.text_cell_render table tr,
+.text_cell_render table td
+{
+	border: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+.text_cell_render table td {
+	text-align: left;
+	vertical-align: top;
+	padding: 1rem 0 4rem 0;
+	margin-bottom: 1em;
+	border-top: 1px dotted #e2e2e2;
+}
+
+.text_cell_render table.no-border {
+	margin-top: 0;
+}
+.text_cell_render table.no-border td {
+	border-top: none;
+}
+
+/** Custom counters for Ordered List elements **/
+@counter-style cs-alphabetic {
+  system: alphabetic;
+  symbols: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z;
+  suffix: ") ";
+}
+
+.text_cell_render ol.outline li span.section::before {
+	content: "Section: ";
+}
+.text_cell_render ol.outline li span.section,
+.text_cell_render ol.outline li span.section::before {
+	font-weight: bold;
+}
+
+/** -------------------------------------------------------------------- **/
+/** Media Queries
+ * Modify notebook layout based on parameters like screen width, etc.
+ */
+
+/** If the width of the viewport (i.e. browser window) is less 
+  * than 1000px, let the content container consume more horizontal
+  * space.
+  */
+
+@media all and (max-width: 800px) {
+	div #notebook { width: 95%; }
+	
+	#notebook .container {
+		width: 100%;
+	}
 }
